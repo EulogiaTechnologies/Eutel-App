@@ -1,0 +1,12 @@
+export 'package:eutel_mobile_app/presentations/splash_screen/all_text.dart';
+export 'package:go_router/go_router.dart';
+export 'package:eutel_mobile_app/widget/buttonwidget.dart';
+export 'package:eutel_mobile_app/app_route/router.dart';
+export 'package:eutel_mobile_app/styling/textstyle.dart';
+export 'package:flutter_spinkit/flutter_spinkit.dart';
+export 'package:eutel_mobile_app/global_controller.dart';
+export 'package:eutel_mobile_app/presentations/splash_screen/provider/splash_provider.dart';
+export 'package:flutter_riverpod/flutter_riverpod.dart';
+export 'package:responsive_sizer/responsive_sizer.dart';
+export 'package:eutel_mobile_app/styling/appcolors.dart';
+export 'package:eutel_mobile_app/presentations/splash_screen/controller/splashcontroller.dart';
