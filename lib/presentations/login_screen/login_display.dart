@@ -1,4 +1,5 @@
 import '../../core/utils/image_constant.dart';
+import '../../widget/custom_elevated_button.dart';
 import 'export.dart';
 
 class LoginDisplay extends StatelessWidget {
@@ -109,29 +110,10 @@ class LoginDisplay extends StatelessWidget {
                                       ),
                                     ],
                                   ),
-                                  child: AppButton(
-                                    padding: EdgeInsets.only(
-                                        left: 13.w,
-                                        right: 13.w,
-                                        top: 2.h,
-                                        bottom: 2.h),
-                                    buttonText: buttonText,
+                                  child: CustomElevatedButton(
+                                    text: "Next",
                                     backgroundColor:
                                         AppColors.backGroundGreenColor,
-                                    onPressed: () {
-                                      context.goNamed(RouterClass.userLogin);
-                                    },
-                                    borderStyle: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(30.sp)),
-                                      side: const BorderSide(
-                                        width: 0,
-                                      ),
-                                    ),
-                                    textColor: AppColors.appWhiteColor,
-                                    textStyle: AppTextStyle.boldFont().copyWith(
-                                        color: AppColors.appWhiteColor,
-                                        fontSize: 19.sp),
                                   ),
                                 ),
                                 GestureDetector(

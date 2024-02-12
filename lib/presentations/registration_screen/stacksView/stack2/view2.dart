@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'package:eutel_mobile_app/widget/buttonwidget.dart';
 import 'package:eutel_mobile_app/presentations/registration_screen/export.dart';
 
 import '../../../../widget/custom_elevated_button.dart';

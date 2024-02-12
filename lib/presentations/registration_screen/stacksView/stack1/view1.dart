@@ -1,8 +1,7 @@
 import 'package:eutel_mobile_app/presentations/registration_screen/export.dart';
-import 'package:eutel_mobile_app/widget/custom_image_view.dart';
 
 import '../../../../core/utils/image_constant.dart';
-import '../../../../widget/buttonwidget.dart';
+
 import '../../../../widget/custom_elevated_button.dart';
 
 class View1 extends StatefulWidget {
@@ -76,7 +75,7 @@ class _View1State extends State<View1> {
           CustomElevatedButton(
             text: "Next",
           ),
-          SizedBox(height: 30),
+          const SizedBox(height: 30),
           Padding(
             padding: EdgeInsets.only(left: 4.w, right: 4.w),
             child: Row(
