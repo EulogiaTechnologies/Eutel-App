@@ -7,6 +7,7 @@ class RegisterView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Consumer(builder: (context, ref, _) {
+      final registerPro = ref.watch(registerProvider);
       return SafeArea(
         child: Scaffold(
           backgroundColor: AppColors.appWhiteColor,
@@ -36,10 +37,10 @@ class RegisterView extends ConsumerWidget {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      const SizedBox(
+                      SizedBox(
                         height: 6,
                         child: HeadIndicator(
-                          index: 3,
+                          index: registerPro.currentIndex,
                           lenght: 7,
                         ),
                       ),
@@ -48,7 +49,19 @@ class RegisterView extends ConsumerWidget {
                           height: 100.h,
                           width: double.infinity,
                           child: PageView(
-                            children: const [View1(), View2(), View3()],
+                            onPageChanged: (v) {
+                              registerPro.changePage(v);
+                            },
+                            controller: registerPro.pageController,
+                            children: const [
+                              View1(),
+                              View2(),
+                              View3(),
+                              View3(),
+                              View3(),
+                              View3(),
+                              View3()
+                            ],
                           ))
                     ],
                   ),
